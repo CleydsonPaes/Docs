@@ -1,0 +1,20 @@
+Nome do UC: Cadastrar Disciplina
+Descrição: O Usuário fornece código, nome, horários e carga horária de uma disciplina, o sistema irá cadastrar se não houver uma disciplina de mesmo código.
+Fluxo Básico de Eventos:
+1. O usuário fornece o código da disciplina.
+2. O usuário fornece o nome da disciplina que deseja cadastrar.
+3. O usuário fornece a grade horária da disciplina.
+4. O sistema verifica as informações e confirma o cadastro ao usuário caso não haja conflito.
+
+Fluxos Alternativos:
+1. O usuário não preencheu um campo (código, nome, carga horária, horários).
+	1.1 O sistema informa que o preenchimento dos campoes é necessário e impede o cadastro.
+2. O usuário preencheu com uma disciplina que já existe.
+	2.1 O sistema informa que esta disciplina já está cadastrada e impede o cadastro redundante até que seja modificado ou cancelado.
+
+Pré-Condições: 
+	O usuário precisa estar logado e autenticado no sistema.
+	O sistema deve ter conexão com o banco de dados.
+Pós-Condições:
+	Confirmação de Sucesso ou Cancelamento do cadastro.
+
