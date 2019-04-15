@@ -1,0 +1,22 @@
+Papeis na documentação dos casos de uso
+
+Joas
+	Docentes
+	Afastamentos
+	ProfessoresEmCargosAdministrativos
+Caio
+	Usuários
+	Area
+	TitulaçãoDosProfessores
+David
+	ProfessoresNoCTA
+	ProfessoresEmCCD_NDE
+	ProjetoDePesquisaEnsinoEExtensão
+Petro
+	DocentesColaboresDeProjetos
+	CadeirasDoCTA
+	CargosAdministrativos
+Cleydson
+	RegimesDeTrabalho
+	Classes
+	ProgramaDePósGraduação
