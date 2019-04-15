@@ -1,0 +1,155 @@
+{
+	Docentes: {
+		Nome,
+		SIAPE,
+		E. Afastamento,
+		Area,
+		Fone,
+		EmProgramaDePosGraduação,
+		Categoria,
+		Nível,
+		DataÚltimaProgressão,
+		EmProbatório_Estabilidade,
+		Regime,
+		Titulação,
+		DataDeingresso,
+		PósDoc,
+		Sala,
+		ComSala,
+		DesligadoOuLicença,
+		EmailPessoal,
+		EmailInstitucional,
+		CurrículoLattes,
+		Foto,
+		DataNascimento,
+		Contatos(Emergência),
+		CCD_NDE,
+		PontuaçãoCCD_NDE,
+		PontuaçãoTotal, /*Pontuação Cargos ADM + Pontuação CCD/NDE + Pontuação Comissão*/
+	},
+
+	Afastamentos: {
+	Código,
+	Professor, /*ID*/
+	CódigoDeAfastamento,
+	InicioDoAfastamento,
+	FimDoAfastamento,
+	Observações,
+	Processo,
+	Arquivo,
+	},
+
+	/*Consultadas Afastamento
+		Estado : "Vai se Afastar" | "Afastado(a)" | "Voltou de Afastamento"
+	*/
+
+	ProfessoresEmCargosAdministrativos: {
+	Nome,
+	CargoADM, /*ID*/
+	Professor, /*ID*/
+	Início,
+	Fim,
+	Portaria,
+	Observações,
+	PontuaçãoPorSemestre,
+	MesesNoCargo,
+	},
+
+	/*Consultas ProfessoresEmCargos
+		MesesNoCargo
+		PontuaçãoTotal : 
+			if(Início)
+				PontuaçãoPorSemestre * (Meses no Cargo / 6)
+			else
+				0
+	*/
+
+	ProfessoresNoCTA: {
+		Código,
+		Professor,
+		CadeiraNoCTA,
+		Início,
+		Fim,
+		Titular_Suplente,
+	},
+
+	ProfessoresEmCCD_NDE: {
+		ID,
+		CCD_NDE,
+		Curso,
+		Professor,
+		Início,
+		Fim,
+		Portaria,
+		Pontuação, /*
+			if(Início)
+				if(Titular_Suplente == 'Titular')
+					5 * (Meses / 6)
+				else
+					2 * (Meses / 6)
+			else
+				0
+		*/
+		Titular_Suplente,
+	},
+
+	ProjetoDePesquisaEnsinoEExtensão: {
+		Descrição,
+		Natureza, /*Pesquisa | Ensino | Extensão*/
+		Resumo,
+		Coordenador, /*ID Docente*/
+		Link,
+		DocentesColabores,
+		Início,
+		Fim(Previsão),
+		Publicações,
+		FinanciadoPor,
+	},
+
+	DocentesColaboresDeProjetos{
+		IDProjeto,
+		Docente
+	}
+
+	CadeirasDoCTA: {
+		Nome,
+		Pontuação,
+		DiscentesAtuais,
+	},
+
+	CargosAdministrativos: {
+		Nome,
+		Pontuação,
+	},
+
+	RegimesDeTrabalho: {
+		Nome
+		Professor /*ID*/
+		Total
+	},
+
+	Classes: {
+		Nome
+		Professor
+		Total
+	},
+
+	TitulaçãoDosProfessores: {
+		Titulação
+		Professor
+		Total
+	},
+
+	Area: {
+		Sigla
+		Nome
+		Surpevisor
+		Professor
+	},
+
+	ProgramaDePósGraduação: {
+		Sigla
+		Nome
+		Docente
+	}
+}
