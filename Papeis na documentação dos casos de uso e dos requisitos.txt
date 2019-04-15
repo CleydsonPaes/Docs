@@ -1,4 +1,4 @@
-Papeis na documentação dos casos de uso
+Papeis na documentação dos casos de uso e dos requisitos
 
 Joas
 	Docentes

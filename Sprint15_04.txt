@@ -1,0 +1,10 @@
+Sprint do dia 15/04
+
+	Documentar os casos de uso
+	Documentar os requisitos
+	Fazer o diagrama ER
+	Documentar as histórias de usuário
+	PM canvas
+	Telas da aplicação
+	Sistema de cadastro e login
+	Json Web Token login
