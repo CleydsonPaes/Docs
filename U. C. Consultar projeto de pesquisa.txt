@@ -1,0 +1,17 @@
+Nome do UC: Consultar projeto de pesquisa
+Descrição: O usuário seleciona opção de listar projetos de pesquisa
+
+Fluxo básico de eventos:
+1. O sistema exibe a lista dos projetos de pesquisa cadastrados
+2. O usuário seleciona um projeto da lista
+4. O sistema exibe uma visão geral das informações do projeto
+5. O sistema solicita confirmação do usuário
+6. O sistema valida as informações
+7. O sistema exibe os detalhes do projeto.
+ 
+Pré-condições:
+O usuário está logado no sistema.
+
+Fluxos alternativos:
+5.1 - O usuário nega a confirmação
+	5.1.1 - O sistema fecha a visão geral e exibe a lista dos projetos 		cadastrados.

@@ -1,0 +1,22 @@
+Nome do UC: Cadastrar projeto de pesquisa
+Descrição: O usuário fornece o tema do projeto de pesquisa, o professor 	   	   responsável e a data de início.
+
+Fluxo básico de eventos:
+1. O usuário fornece o tema do projeto
+2. O usuário fornece o nome do professor responsável pelo projeto
+3. O usuário fornece a data de início do projeto
+4. O sistema exibe uma visão geral das informações dadas pelo usuário
+5. O sistema solicita confirmação do usuário
+6. O sistema valida as informações
+7. O sistema confirma o cadastro do projeto.
+ 
+Pré-condições:
+O usuário está logado no sistema.
+
+Fluxos alternativos:
+2.1 - O código de professor é inválido
+	2.1.1 - O sistema informa que o nome fornecido não corresponde a 		nenhum professor cadastrado
+
+
+5.1 - O usuário nega a confirmação
+	5.1.1 - O sistema solicita novamente os dados para cadastro do 		projeto
